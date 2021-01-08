@@ -1,4 +1,4 @@
-extern crate common_lib;
+extern crate basic_main_lib;
 extern crate common_proto_rust;
 
 pub fn main() {

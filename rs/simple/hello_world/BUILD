@@ -1,7 +1,7 @@
 load("@io_bazel_rules_rust//rust:rust.bzl", "rust_binary")
 
 rust_binary(
-    name = "hello_world",
+    name = "rs_simple_hello_world",
     srcs = ["src/main.rs"],
-    deps = ["//hello_lib"],
+    deps = ["//rs/simple/hello_lib:rs_simple_hello_lib"],
 )

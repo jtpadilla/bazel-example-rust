@@ -4,11 +4,11 @@ load("@io_bazel_rules_rust//rust:rust.bzl", "rust_binary", "rust_library")
 package(default_visibility = ["//proto:__subpackages__"])
 
 rust_binary(
-    name = "main",
+    name = "basic_main",
     srcs = ["src/main.rs"],
     visibility = ["//proto/helloworld:__subpackages__"],
     deps = [
         "//proto:common_proto_rust",
-        "//proto/basic/lib:common_lib",
+        "//rs/basic/lib:basic_main_lib",
     ],
 )
