@@ -1,6 +1,6 @@
-extern crate hello_lib;
+extern crate rs_simple_hello_lib;
 
 fn main() {
-    let hello = hello_lib::Greeter::new("Hello");
+    let hello = rs_simple_hello_lib::Greeter::new("Hello");
     hello.greet("world");
 }
